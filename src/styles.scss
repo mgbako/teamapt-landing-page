@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+$text: rgb(53 58 70);
+$text2: #858585;
+$primary-color: rgba(231, 217, 166, 1);
+$secondary-color: rgba(231, 217, 166, 0.15);
+$green: #42e3ae;
+$green-gradient: rgba(66, 227, 174, 0.3);
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import '~remixicon/fonts/remixicon.css';
+@import '~animate.css/animate.css';
+
+*, body, html, h1,h2,h3,h4,h5,h6,p,a,small,span{
+  font-family: 'Arvo', serif;
+}
+
+/* .shapes-group {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10rem;
+}
+
+.shapes {
+  .shape {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid $text;
+    border-radius: 50%;
+    transform: rotate(58deg);
+    margin-bottom: 16px;
+  }
+
+  &.shapes2 {
+    margin-left: 10px;
+  }
+} */

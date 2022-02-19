@@ -1,0 +1,153 @@
+$text: rgb(53 58 70);
+$text2: #858585;
+$primary-color: rgba(231, 217, 166, 1);
+$secondary-color: rgba(231, 217, 166, 0.15);
+$green: #42e3ae;
+$green-gradient: rgba(66, 227, 174, 0.3);
+$footer-green: rgba(32, 72, 70, 1);
+$footer-black: rgb(21 27 39);
+
+.footer {
+  position: relative;
+  background-image: linear-gradient(
+    130deg,
+    $footer-black,
+    $footer-black,
+    $footer-black,
+    $footer-green
+  );
+  padding: 50px 50px 50px;
+  min-height: 700px;
+
+  .nav {
+    position: relative;
+    width: 100%;
+    bottom: -1rem;
+
+    .nav-item {
+      .nav-link {
+        color: #d7dbdc;
+      }
+    }
+  }
+  .shapes-group {
+    position: absolute;
+    bottom: 7rem;
+    left: 10rem;
+    display: flex;
+    align-items: baseline;
+    margin-top: 10rem;
+  }
+
+  .copywrite {
+    color: $text2;
+    text-align: center;
+    position: relative;
+    bottom: -2rem;
+  }
+}
+
+.shapes {
+  .shape {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #fff;
+    border-radius: 50%;
+    transform: rotate(58deg);
+    margin-bottom: 16px;
+  }
+
+  &.shapes2 {
+    margin-left: 10px;
+  }
+}
+
+.footer-card {
+  background-color: #353a47;
+  padding: 20px;
+  position: relative;
+  top: -200px;
+  background: url(../../../assets/footer.png) no-repeat bottom left,
+    linear-gradient(130deg, #353a47, #353a47, #353a47, $footer-green);
+  min-height: 450px;
+  border-radius: 30px;
+
+  .title {
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 60px;
+    color: #f8fbfa;
+  }
+  p {
+    color: #99a2a5;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .get-started {
+    color: #ecf6f3;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 3rem;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      position: absolute;
+      background: $green;
+      z-index: -1;
+      left: -15px;
+    }
+
+    .icon {
+      margin-left: 10px;
+    }
+  }
+
+  .shapes-group {
+    position: absolute;
+    left: unset;
+    bottom: -11.5rem;
+    right: 8rem;
+    display: flex;
+    align-items: baseline;
+    margin-top: 10rem;
+  }
+
+  .stat {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    position: absolute;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    p {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    h3 {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    &.profile {
+      left: -40px;
+      top: 18px;
+    }
+    &.earnings {
+      left: 50px;
+      bottom: -160px;
+    }
+    &.audience {
+      right: 100px;
+      bottom: -30px;
+    }
+  }
+}

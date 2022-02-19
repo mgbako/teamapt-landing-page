@@ -1,0 +1,18 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+.get-started{
+  color: #47a084;
+  background-color: rgb(217 248 237);
+  border-radius: 50px;
+  .nav-link{
+    padding: 10px 20px;
+    color: inherit;
+  }
+}

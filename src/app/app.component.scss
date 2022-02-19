@@ -1,0 +1,233 @@
+$text: rgb(53 58 70);
+$text2: #858585;
+$primary-color: rgba(231, 217, 166, 1);
+$secondary-color: rgba(231, 217, 166, 0.15);
+$green: #42e3ae;
+$green-gradient: rgba(66, 227, 174, 0.3);
+$red: rgb(255 74 72);
+$red-gradient: rgba(255, 74, 72, 0.2);
+
+.showcase {
+  position: relative;
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 95px;
+  text-align: left;
+  margin-top: 3rem;
+  text-transform: capitalize;
+  background-color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+  background-image: linear-gradient(to right top, $secondary-color, #fff);
+  //background-image:linear-gradient(to top right, $secondary-color, #fff)
+  span {
+    display: inline-block;
+  }
+  img {
+    width: 100px;
+    vertical-align: baseline;
+  }
+
+  small {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    bottom: -23px;
+    right: 55px;
+    color: $text2;
+  }
+}
+
+.stats {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.count {
+  display: flex;
+  align-items: baseline;
+  color: $text;
+  .icon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: $text;
+  }
+  .amount {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text;
+  }
+  .item {
+    font-size: 16px;
+    color: $text2;
+  }
+}
+
+.circle {
+  position: absolute;
+  bottom: -7.5rem;
+  background-color: #fff;
+  border: 3px solid #e7d9a6;
+  outline: 15px solid #fff;
+  outline-offset: 0px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    font-size: 104px;
+    font-weight: 100;
+    color: $primary-color;
+  }
+}
+.section {
+  padding: 4rem 3rem;
+
+  .title {
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 60px;
+    color: $text2;
+  }
+  p {
+    color: $text2;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+.section2 {
+  background-color: rgb(53 58 70);
+  color: #fff;
+  font-size: 45px;
+  .line {
+    width: 50%;
+    height: 2px;
+    background: #575e70;
+    display: inline-block;
+    position: absolute;
+    bottom: 25px;
+    margin-left: 30px;
+  }
+}
+
+.section3 {
+  background-image: linear-gradient(130deg, #fff, #fff, $green-gradient);
+  .title {
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 60px;
+    color: $text2;
+  }
+  p {
+    color: $text2;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .get-started {
+    color: $text;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 3rem;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      position: absolute;
+      background: $green;
+      z-index: -1;
+      left: -15px;
+    }
+
+    .icon {
+      margin-left: 10px;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px 20px;
+
+    .card {
+      padding: 30px;
+      border-radius: 30px;
+      border: none;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      .card-title {
+        color: $text2;
+        font-size: 20px;
+      }
+
+      .figure {
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #000;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+
+      &:nth-child(2) {
+        .figure::before {
+          background: #ebc043;
+        }
+      }
+      &:nth-child(3) {
+        .figure::before {
+          background: #ff4a48;
+        }
+      }
+      &:nth-child(4) {
+        .figure::before {
+          background: #42e3ae;
+        }
+      }
+    }
+  }
+}
+
+.shapes-group {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10rem;
+}
+
+.shapes {
+  .shape {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid $text;
+    border-radius: 50%;
+    transform: rotate(58deg);
+    margin-bottom: 16px;
+  }
+
+  &.shapes2 {
+    margin-left: 10px;
+  }
+}
+
+.mobile {
+  min-height: 700px;
+  background-image: linear-gradient(90deg, $red-gradient, #fff, #fff, #fff);
+}
