@@ -16,4 +16,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Demo
 
-To view the app [Demo](https://angular.io/cli) page.
+To view the app [Demo](https://6210a909874d45939a62da5c--musing-pasteur-cf04a0.netlify.app/) page.
