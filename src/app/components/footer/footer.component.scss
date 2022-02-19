@@ -151,3 +151,40 @@ $footer-black: rgb(21 27 39);
     }
   }
 }
+
+@media (max-width: 1024.98px) {
+  .footer {
+    .footer-card {
+      top: -250px;
+      z-index: 1;
+
+      .stat.profile {
+        left: unset;
+        top: 3.5rem;
+        right: 20px;
+      }
+
+      .stat.earnings {
+        left: unset;
+        bottom: unset;
+        top: 12rem;
+        right: 20rem;
+      }
+
+      .stat.audience {
+        right: 20px;
+        bottom: unset;
+        top: 18rem;
+      }
+    }
+
+    .shapes-group.group2 {
+      bottom: 8rem;
+      left: 5rem;
+      margin-top: 10rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}
