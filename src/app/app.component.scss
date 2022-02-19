@@ -419,5 +419,16 @@ $red-gradient: rgba(255, 74, 72, 0.1);
   }
 }
 
+@media (max-width: 820.98px) {
+  .showcase {
+    .circle {
+      position: absolute;
+      bottom: -11.5rem;
+      height: 150px;
+      width: 150px;
+    }
+  }
+}
+
 @media (max-width: 575.98px) {
 }
