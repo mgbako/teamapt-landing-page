@@ -1,17 +1,30 @@
+$text2: #858585;
+
 .navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 1rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
 }
 
-.get-started{
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: $text2;
+}
+
+.get-started {
   color: #47a084;
   background-color: rgb(217 248 237);
   border-radius: 50px;
-  .nav-link{
+  .nav-link {
     padding: 10px 20px;
     color: inherit;
   }
