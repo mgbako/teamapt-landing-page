@@ -431,4 +431,79 @@ $red-gradient: rgba(255, 74, 72, 0.1);
 }
 
 @media (max-width: 575.98px) {
+  .showcase {
+    font-size: 36px;
+    line-height: 60px;
+    height: 100vh;
+
+    img {
+      display: none;
+    }
+
+    small {
+      font-size: 24px;
+      line-height: 48px;
+    }
+
+    .count {
+      .icon {
+        font-size: 36px;
+      }
+      .amount {
+        font-size: 36px;
+      }
+      .item {
+        font-size: 26px;
+      }
+    }
+
+    .circle {
+      position: absolute;
+      bottom: -11.5rem;
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  .section .title {
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 50px;
+    color: #858585;
+    margin-bottom: 20px;
+  }
+
+  .section2 {
+    font-size: 28px;
+    padding: 8rem 2rem;
+  }
+
+  .section3_2 .card {
+    position: relative;
+    padding: 30px 16px 30px 16px;
+    background: transparent;
+
+    .title {
+      color: #858585;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .mobile {
+    p {
+      margin-right: 0rem;
+    }
+
+    .phone {
+      display: none;
+    }
+
+    .link-group {
+      display: flex;
+    }
+  }
 }

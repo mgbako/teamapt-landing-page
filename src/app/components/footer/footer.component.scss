@@ -186,5 +186,36 @@ $footer-black: rgb(21 27 39);
   }
 }
 
-@media (max-width: 820.98px) {
+@media (max-width: 575.98px) {
+  .footer {
+    .footer-card {
+      .title {
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 45px;
+        color: #f8fbfa;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .stat {
+        display: none;
+      }
+
+      .get-started {
+        color: #151b27;
+      }
+      .shapes-group {
+        bottom: -8.5rem;
+        right: 0rem;
+      }
+    }
+    .shapes-group.group2 {
+      bottom: 13rem;
+      left: 5rem;
+      margin-top: 10rem;
+    }
+  }
 }
